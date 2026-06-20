@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>国际站规则中心 · 商家运营指南</title>
+<style>
+:root{
+  --bg:#0a0e1a;--bg2:#0f1629;--card:rgba(15,23,42,0.7);--card-h:rgba(20,30,55,0.85);
+  --glass:rgba(255,255,255,0.03);--gb:rgba(255,255,255,0.08);
+  --pri:#38bdf8;--pri2:#818cf8;--ok:#34d399;--wn:#fbbf24;--err:#f87171;
+  --t:#e2e8f0;--t2:#94a3b8;--t3:#64748b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--t);line-height:1.6;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:linear-gradient(rgba(56,189,248,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,0.02) 1px,transparent 1px);background-size:60px 60px;z-index:0;pointer-events:none}
+body::after{content:'';position:fixed;top:-300px;right:-300px;width:800px;height:800px;background:radial-gradient(circle,rgba(56,189,248,0.06) 0%,rgba(129,140,248,0.04) 40%,transparent 70%);border-radius:50%;z-index:0;pointer-events:none}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 24px 60px;position:relative;z-index:1}
+.hero{border-radius:20px;padding:48px 40px;margin-bottom:32px;position:relative;overflow:hidden;border:1px solid var(--gb);background:linear-gradient(135deg,rgba(15,23,42,0.95),rgba(30,41,59,0.9))}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 600px 300px at 20% 80%,rgba(56,189,248,0.08),transparent),radial-gradient(ellipse 500px 250px at 80% 20%,rgba(129,140,248,0.08),transparent)}
+.hero::after{content:'';position:absolute;inset:0;background-image:radial-gradient(circle 2px,rgba(56,189,248,0.2) 100%,transparent 100%),radial-gradient(circle 1.5px,rgba(129,140,248,0.15) 100%,transparent 100%);background-size:80px 80px,120px 120px;background-position:0 0,40px 40px;opacity:0.4}
+.hero-content{position:relative;z-index:1}
+.hero-badge{display:inline-block;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--pri);background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.25);border-radius:20px;padding:4px 16px;margin-bottom:16px}
+.hero h1{font-size:32px;font-weight:700;margin-bottom:8px;background:linear-gradient(135deg,#e2e8f0 0%,#38bdf8 50%,#818cf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:14px;color:var(--t2);max-width:600px;margin-bottom:20px}
+.hero-stats{display:flex;gap:32px}
+.hero-stat{text-align:center}
+.hero-stat .num{font-size:28px;font-weight:700;color:var(--pri);display:block;line-height:1.2}
+.hero-stat .label{font-size:11px;color:var(--t3);letter-spacing:0.5px}
+.search-bar{display:flex;align-items:center;background:var(--card);border-radius:12px;padding:12px 18px;margin-bottom:24px;border:1px solid var(--gb);backdrop-filter:blur(10px);transition:border-color .3s}
+.search-bar:focus-within{border-color:rgba(56,189,248,0.4);box-shadow:0 0 20px rgba(56,189,248,0.1)}
+.search-bar svg{flex-shrink:0;color:var(--t3)}
+.search-bar input{flex:1;border:none;outline:none;font-size:15px;padding:4px 14px;background:transparent;color:var(--t)}
+.search-bar input::placeholder{color:var(--t3)}
+.search-bar .clear{cursor:pointer;color:var(--t3);font-size:18px;padding:0 4px;display:none}
+.search-bar .clear.show{display:block}
+.quick-nav{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+.quick-nav a{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;background:var(--glass);border-radius:8px;font-size:12px;color:var(--t2);text-decoration:none;border:1px solid var(--gb);transition:all .3s;white-space:nowrap}
+.quick-nav a:hover{border-color:rgba(56,189,248,0.4);color:var(--pri);background:rgba(56,189,248,0.06);box-shadow:0 0 12px rgba(56,189,248,0.08)}
+.quick-nav a .icon{font-size:14px}
+.module{margin-bottom:36px}
+.module-hd{display:flex;align-items:center;gap:12px;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.module-hd .icon{width:40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.module-hd h2{font-size:18px;font-weight:600;flex:1}
+.module-hd .count{font-size:11px;color:var(--t3);background:rgba(255,255,255,0.04);padding:3px 10px;border-radius:10px;border:1px solid rgba(255,255,255,0.06)}
+.ic-blue{background:rgba(56,189,248,0.12);color:var(--pri)}
+.ic-purple{background:rgba(129,140,248,0.12);color:var(--pri2)}
+.ic-green{background:rgba(52,211,153,0.12);color:var(--ok)}
+.ic-orange{background:rgba(251,191,36,0.12);color:var(--wn)}
+.ic-cyan{background:rgba(34,211,238,0.12);color:#22d3ee}
+.ic-red{background:rgba(248,113,113,0.12);color:var(--err)}
+.sub-hd{font-size:13px;font-weight:600;color:var(--t2);margin:18px 0 10px;padding-left:12px;border-left:3px solid var(--pri);display:flex;align-items:center;gap:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:12px}
+.card{background:var(--card);border-radius:12px;padding:16px;border:1px solid var(--gb);transition:all .3s;cursor:pointer;text-decoration:none;color:inherit;display:flex;flex-direction:column;position:relative;backdrop-filter:blur(8px)}
+.card:hover{border-color:rgba(56,189,248,0.3);box-shadow:0 4px 24px rgba(56,189,248,0.08),0 0 0 1px rgba(56,189,248,0.1);transform:translateY(-2px);background:var(--card-h)}
+.card .card-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.card .card-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.card .card-logo{width:36px;height:36px;border-radius:10px;object-fit:contain;background:#fff;padding:3px;flex-shrink:0;box-shadow:0 0 8px rgba(56,189,248,0.2)}
+.card .card-title{font-size:13px;font-weight:600;line-height:1.4;flex:1;color:var(--t)}
+.card .card-desc{font-size:11px;color:var(--t3);line-height:1.5;flex:1}
+.card .card-arrow{position:absolute;right:14px;top:50%;transform:translateY(-50%);color:var(--t3);opacity:0;transition:opacity .3s;font-size:14px}
+.card:hover .card-arrow{opacity:1;color:var(--pri)}
+.card .tag{display:inline-block;font-size:9px;padding:2px 7px;border-radius:4px;margin-top:6px;font-weight:600;letter-spacing:0.3px}
+.tag-login{background:rgba(251,191,36,0.12);color:var(--wn);border:1px solid rgba(251,191,36,0.2)}
+.tag-new{background:rgba(52,211,153,0.12);color:var(--ok);border:1px solid rgba(52,211,153,0.2)}
+.tag-core{background:rgba(56,189,248,0.12);color:var(--pri);border:1px solid rgba(56,189,248,0.2)}
+.module::before{content:'';display:block;height:2px;border-radius:2px}
+.module.glow-blue::before{background:linear-gradient(90deg,var(--pri),transparent)}
+.module.glow-purple::before{background:linear-gradient(90deg,var(--pri2),transparent)}
+.module.glow-green::before{background:linear-gradient(90deg,var(--ok),transparent)}
+.module.glow-cyan::before{background:linear-gradient(90deg,#22d3ee,transparent)}
+.module.glow-red::before{background:linear-gradient(90deg,var(--err),transparent)}
+.card.highlight{border-color:rgba(56,189,248,0.4);background:rgba(56,189,248,0.06)}
+.card.dim{opacity:0.2}
+.empty{text-align:center;padding:40px 20px;color:var(--t3);font-size:13px;display:none}
+.foot{text-align:center;color:var(--t3);font-size:11px;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.04);letter-spacing:0.3px}
+@media(max-width:600px){.hero{padding:28px 20px}.hero h1{font-size:24px}.hero-stats{gap:16px}.hero-stat .num{font-size:22px}.cards{grid-template-columns:1fr}.quick-nav a{padding:5px 10px;font-size:11px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero"><div class="hero-content">
+    <div class="hero-badge">ICBU · Rules Center</div>
+    <h1 id="heroTitle"></h1><p id="heroSubtitle"></p>
+    <div class="hero-stats" id="heroStats"></div>
+  </div></div>
+  <div class="search-bar">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <input type="text" id="searchInput" placeholder="搜索规则或关键词，如：AI、星等级、发品、海外现货…" />
+    <span class="clear" id="clearBtn" onclick="clearSearch()">&times;</span>
+  </div>
+  <div class="quick-nav" id="quickNav"></div>
+  <div id="modulesContainer"></div>
+  <div class="empty" id="emptyState">没有找到匹配的规则，试试其他关键词？</div>
+  <div class="foot" id="footer"></div>
+</div>
+<script>
+const LOGOS={accio:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAElElEQVR4nO2cTW8bRRjH/zO2U6dJHLclSkLFS5Aqg9ImrkSBikMPRYgSLlw4oN7gM3DggFRO/Qhw4RNwKCcqVQgkJAgVapO+pFVQWwmIlNK0+KVOUr/McnDWu/PMrMfZdSsUP79b1o935/n5eWZm45UBhkmC2E3wWz9se09rIM+axdPZnnLvKWgviaG4RHV9cS+LoUSJklFvGCQ5QHS+VkGDJsfHlrchaFDl+ND8I1uMaaMJGvTq8Ql74Apy0BHE1aPj++AKcsCCHLAgByzIAQtywIIcsCAHLMgBC3LAghywIAcsyAELcsCCHLAgByzIAQtywIIcsCAHLMgBC3KQ7ufJTk1InD+WMY5fuq/wxc2GcfzwsMC3J4e0Y1+uNPH9esuI/ayQxoeHU9qxj3+r417N/DLmmxNDeG0seBbhxwcKn183r98Lfa2ghemU9fipCYlRy0extuXhnyd6gsfz9gdO5vPmUG3HhlNAYVQ/x3JJRQ3ZSd8E5TMCJw/ZTzckgXcm7fKWS7qgoiXpXAaYGTHFFcfN2LlxCUlCl/4Pgt6bkkh3edpoYdp+KTr4F/YLHBrSTzQ/Lq0PMhUt1XacCN5sAX88jv+daN8EvU/a6+cNPfGjOYkX95sJ2T7deZJ4uJXCLTmZFZjM0lj97+tlBZXgO+O+CDoyKnCE9P1Xd5pYreojs81R92oeyg06D8nIv79ba+Fx0/5aRgKzOf29SdoL6JOgD57XE1+terhb83Dxvr4anZky5wcPwHI5eh7KpoBCaEW6UvJwrRwkHa6Y2ZxEhmS0VEr2yEFiQWkBvDupn8Zfpi+t6+U9sU/gxAHzknSVeWVEYGxn1Tuak0jtOGgoYKWitKoIT9R0BfTjk5BY0NvPSeQzwcCU1973AMBG3cPv/+oDtLXZVSJIimDeCVfTSkWhroCroap4eUR0rk9XwFvVdnwSEguiCV9+pPCwHiRwcV0foW1PtFr1sEX2hn6y4RbyW/F2RWE7FD+XF5ACODZO55/kT/QkEmTb+9Bd8E8PWloytj1Ry2uvNmGKeYG0aLeYj99aTQ+4UdHbrDAmMEyKM+kEDSS81bDtfc7NZnButvv7FqYlLqzpIpdKCm8cDGS8OiZRzEtkd5JWROJSSeH1nfmseEBio65XC42PSyJBdO/TK/6e6M/NICnaDikBnH0pOP+dmqct7+H4wqhAralXMo2PS+wWs+19dgOdu25WFBrkA3/zoNlePjfKQbwU6FRTVHxcYlcQ3fv8tenho8V6ZPynM2l8MhO858yUxNd30dkG1FV71Zmz3F8BZsJPFHC7qoyJOSo+LrEqyLb3+eVh9wH9Sl637Ym6rTr0phbQl/te4uMQSxDd+wCmAMqtqkKp0f3WI+pT/3vL07YOcePjEEsQnZy3W8AVR0krD7j8SB803RNdi7ixjBKx2/g4dMqAn5M2WTydFfw/aQcsyAELcsCCHLAgByzIAQtywIIcsCAHLMhBR1Cvv2UxKPg+uIIcaIK4itqEPXAFOTAEDXoV0fytFTSokmx5R7bYoEmKypd/gSrJL1BR9pKoQeuQp8Z/H0asYKGXUEsAAAAASUVORK5CYII=",okki:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAM0AAAA4CAMAAABpPYzxAAAAP1BMVEUAAAAeICYeICYcICYeICAeICYdICUcICgdICUeICYdICUeICUeICUQICAgICAeICYdICQbICUgICUdICUeICaF0K+OAAAAFHRSTlMA34BAIO+/IKBwYM+QEBCvTzAwj3soq90AAAPkSURBVGje7ZrdcuMgDEaNMRiDfxO//7PuzmTSDT2JpNLtTDtTXUaAdcSHDDjdr/0wG/ec8+6P7sebn8t5txAnlcjHcJb8ypvjecYn3qV3lYPekAY6xjmcjo6Xw4Tznbks9uhvrcry1Jtu3oSo3M3Ro4foPW7RhcPMQnPT6y753ugqoDKu7e7Yn4Xh7l5PyhvOosNMFUvF41/1cW9tFjqnm4eP92+O+HpC6Z3PKjuSLfGkad2Pfy0yBfOQnR1zxiTQGWpPFJKAWRStPF16vuKFYMDKgAcm6MFeCcHJMEc4FXODTsO1gRUAGimrzkpDUag4i0xDwTAsnaY8dktGGiZEt/IRmr3qmi00zMHQRONOk11FGuQHPp1mqp536Uw0HLy2sM19P0fIbzfTVDBbZ6Ch4KeuhWZ8hzL7t2DTO9dipLlCMBoNJ3TuVBpdZ/NakcbK2as0FEwYOiPNVq/SJppcPdqLMgyLhWZEBdBpWAHaaArGEGh7lYYVwEizowI00ByCKKibsOg0ERVAp2EO2mgSqghsRlkTaCAYIw0qQBONw6sXtga2IU21aBCsRMMcrI00h/xobms1GodXhoVmRBVsoplObLPlybnINBmCMdEkVMEmmoRBlJWTZZoIwVhoRlSANpqoCA0Zn0WaEYvGRDNhv91G47AilM1PEmkm5NhEE5GDNhosG2Mz0kD/i50m4AX1pTTBSBMxnonmcUa/Ec2m6F+nmVtoGGb5pNKwbTjsNA5756+sAoe1CuQT3AoNzgLTJ2iKqULvVdQCzRoQl4UmYyfQRpPwcKXVLtJ0CXFZaNZQn9O+y86mOtq7xUDD0+q1gYbbPW/YCrhOoMFmOFloeCjKrTSd0ydndMYTAeOarDRjgERbaHp92SbzaY2HyMNAw823WxppPK6LJV7XiTQc0Q1Gmm4WJarTUBnhkGHUWw72KBYaSrRvpPEnhG6+6CMNL8auFhpK1DfQICdnqgL2peV2cMVxWqDhaKwE7Te3Z7qnZcmx9jjrPfQlsBLoNN2ESmCkwSCVxS2lVPCzN9EwrsFAQ4ludhpqTbe+M9GwQpXFSLNKV4Sf/xqFXFlp1oJKoNFQortG045TVjMNv8V4Cw0l2kZDHB2GNMK3wslCQ4leRJp2nAQY0EhxJQsNl45vpOnWWYKZ1OK+0xsNFW8Rv497678faPnl9MSLvgMfxPn2H/hnStY/zOfOYP1THpcNR+xZFGLirpyUlGiGCPECk2zMBfPi5QQgXEqKf2tZo+WDUc/JBowGNP37su7StKrtU3Gbl7zxWcw5Ojc/CJjezT8NzpUeMcm2XvxfG9bu137tP9kfADEvV27yPJYAAAAASUVORK5CYII="};
+const FALLBACK_DATA={"title": "国际站规则中心", "subtitle": "一站式商家运营指南 — 从新手入门到进阶运营，所有规则和教程都在这里", "stats": {"modules": 6, "docs": 39, "platforms": 10}, "quick_nav": [{"icon": "🚀", "label": "新手入门", "href": "#mod1"}, {"icon": "🤖", "label": "AI工具", "href": "#mod2"}, {"icon": "🧠", "label": "Accio Work", "href": "#accio"}, {"icon": "💼", "label": "OKKI CRM", "href": "#okki"}, {"icon": "⭐", "label": "星等级", "href": "#mod3a"}, {"icon": "📦", "label": "商品规则", "href": "#mod3b"}, {"icon": "🛒", "label": "交易品货盘", "href": "#mod3c"}, {"icon": "💡", "label": "商机品货盘", "href": "#mod3d"}, {"icon": "🏆", "label": "实力货盘", "href": "#mod3e"}, {"icon": "📜", "label": "平台规则", "href": "#rules"}], "modules": [{"id": "mod1", "icon": "🚀", "icon_color": "ic-blue", "title": "新手入门 / 规则速查", "subsections": [{"title": "", "id": "", "cards": [{"url": "https://peixun-alibaba.yuque.com/r/organizations/homepage", "keywords": "新手 规则 入门 培训 云课堂 课堂", "target": "_blank", "title": "国际站 · 外贸云课堂", "desc": "新手必读！国际站运营规则、平台政策、操作指南的统一学习入口", "icon": "📚", "icon_color": "ic-blue", "tag": {"text": "新手必看", "type": "tag-new"}}, {"url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk", "keywords": "新手 商家 成长宝典 开店 装修 发品 流量 转化 履约 合规 GPSR checklist", "target": "_blank", "title": "新手商家成长宝典", "desc": "新商家全链路指南 — 开店Checklist → 店铺装修发品 → 获取流量 → 承接商机 → 订单履约 → 合规保障，五步走通", "icon": "🎯", "icon_color": "ic-blue", "tag": {"text": "核心资源", "type": "tag-core"}}]}]}, {"id": "mod2", "icon": "🤖", "icon_color": "ic-purple", "title": "AI 工具使用教程", "subsections": [{"title": "AI 能力文档", "id": "", "cards": [{"url": "https://www.yuque.com/jixue-bpssi/wofnz4/hgrvvdnaeb0cra08?singleDoc", "keywords": "AI 生意助手 使用教程 选品 发品 接待 分析 风控", "target": "_blank", "title": "AI 生意助手使用教程", "desc": "首款\"懂外贸\"的AI-native工具，覆盖选品、发品、接待、分析、风控全链路", "icon": "🔥", "icon_color": "ic-purple", "tag": {"text": "核心工具", "type": "tag-core"}}, {"url": "https://www.yuque.com/yuxiaofeng-eqfs2/oz4myo", "keywords": "知识库 上传 手册 AI", "target": "_blank", "title": "知识库上传手册", "desc": "如何将企业资料上传到AI知识库，让AI更懂你的业务", "icon": "📖", "icon_color": "ic-purple"}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/ikv2cgbdpom80lgt", "keywords": "AI 结构化 商详 商品详情", "target": "_blank", "title": "AI 结构化商详", "desc": "用AI自动生成结构化商品详情页，提升买家阅读体验", "icon": "📋", "icon_color": "ic-purple"}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/ma9evbl5qqogqsff", "keywords": "AI 辅助 发品 类目 发布", "target": "_blank", "title": "AI 辅助发品", "desc": "类目发品升级 — AI智能填充商品信息，提升发品效率和质量", "icon": "✨", "icon_color": "ic-purple"}, {"url": "https://www.yuque.com/jixue-bpssi/wofnz4/wcc9yv119d5gilw6", "keywords": "AI 智能 选品 生意助手", "target": "_blank", "title": "AI 智能选品", "desc": "生意助手 × 智能选品 — 用数据驱动选品决策", "icon": "🎯", "icon_color": "ic-purple"}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/esw52xcu0d8hys1o", "keywords": "AI 创意 工坊 图片 素材", "target": "_blank", "title": "AI 创意工坊", "desc": "AI生成商品主图、场景图、营销素材，提升视觉表现力", "icon": "🎨", "icon_color": "ic-purple"}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/ek3bymhgxbk8cxcr", "keywords": "AI Search 搜索 商品 QA 问答", "target": "_blank", "title": "AI Search 商品 Q&A", "desc": "AI搜索时代下商品优化指南，提升AI搜索命中率", "icon": "🔍", "icon_color": "ic-purple"}, {"url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk/shfw3sdbd874y1bk", "keywords": "AI 客户经理 介绍 产品", "target": "_blank", "title": "AI 客户经理产品介绍", "desc": "AI客户经理功能介绍 — 智能运营建议与商机管理", "icon": "👤", "icon_color": "ic-purple"}, {"url": "https://www.yuque.com/chaike/yingxiao", "keywords": "数字营销 广告 P4P 直通车 全站推 推广", "target": "_blank", "title": "数字营销广告投放指南", "desc": "阿里巴巴国际站数字营销广告教程 — 全站推、直通车、P4P等广告产品使用指南", "icon": "📢", "icon_color": "ic-orange", "tag": {"text": "核心工具", "type": "tag-core"}}]}, {"title": "MA 后台快捷入口", "id": "", "cards": [{"url": "https://i.alibaba.com/index.htm?aiAutoShow=true&aiAutoAgentKey=salesDigitalHuman&aiAutoAgentExtInfo=%7B%22actionDesc%22%3A%22%E7%82%B9%E5%87%BB%E8%BE%BE%E6%88%90%E9%A6%96%E4%B8%AA%E3%80%8C%E6%96%B0%E6%89%8B%E9%87%8C%E7%A8%8B%E7%A2%91%E3%80%8D%22%2C%22agentKey%22%3A%20%22salesDigitalHuman%22%7D", "keywords": "新手 里程碑 MA 后台 任务", "target": "_blank", "title": "新手里程碑", "desc": "新店成长任务指引，一步步带你完成从0到1", "icon": "🏁", "icon_color": "ic-orange", "tag": {"text": "需登录", "type": "tag-login"}}, {"url": "https://i.alibaba.com/index.htm?aiAutoShow=true&aiAutoAgentKey=salesDigitalHuman", "keywords": "AI 客户经理 MA 后台", "target": "_blank", "title": "AI 客户经理", "desc": "登录MA后台，直接与AI客户经理对话获取运营建议", "icon": "🤖", "icon_color": "ic-orange", "tag": {"text": "需登录", "type": "tag-login"}}, {"url": "https://i.alibaba.com/index.htm?aiAutoShow=true&aiAutoAgentKey=salesDigitalHuman&aiAutoAgentExtInfo=%7B%22actionDesc%22%3A%22%E6%9F%A5%E7%9C%8B%E5%95%86%E6%9C%BA%E9%A2%84%E8%AD%A6%22%7D", "keywords": "商机 预警 任务 MA 后台", "target": "_blank", "title": "商机预警任务", "desc": "及时查看商机异常和风险预警，防止商机流失", "icon": "⚠️", "icon_color": "ic-orange", "tag": {"text": "需登录", "type": "tag-login"}}]}]}, {"id": "accio", "icon": "🧠", "icon_color": "ic-cyan", "title": "Accio Work 智能工具", "subsections": [{"title": "", "id": "", "cards": [{"url": "https://acciowork.yuque.com/rfmg8t/ieb85b", "keywords": "Accio Work 知识库 入门指南 核心功能 智能体 插件 技能", "target": "_blank", "title": "Accio Work 知识库", "desc": "产品简介、入门指南、核心功能（智能体/插件/技能）、生意助手智能体、OKKI插件、实战技巧", "icon": "📚", "icon_color": "ic-cyan", "tag": {"text": "核心资源", "type": "tag-core"}}, {"url": "https://acciowork.yuque.com/rfmg8t/ieb85b/nkhalskv5xs5i1xg?singleDoc", "keywords": "Accio Work 企业版 AWB 简介 使用流程 FAQ", "target": "_blank", "title": "AW 企业版简介", "desc": "Accio Work 企业版定位、核心价值、使用流程（含操作说明&视频）、常见FAQ、一页纸产品介绍", "icon": "🏢", "icon_color": "ic-cyan"}, {"url": "https://acciowork.yuque.com/rfmg8t/ieb85b", "keywords": "Accio Work 实战局 直播 商家案例 视频", "target": "_blank", "title": "《Accio Work 实战局》系列直播", "desc": "4期商家实战直播回放 — 真实商家分享Accio Work如何助力降本增效、获取商机", "icon": "🎬", "icon_color": "ic-cyan"}]}]}, {"id": "okki", "icon": "💼", "icon_color": "ic-green", "title": "OKKI（小满）CRM", "subsections": [{"title": "", "id": "", "cards": [{"url": "https://xiaomanhelp.yuque.com/r/organizations/homepage", "keywords": "OKKI 小满 CRM 客户管理 邮件 跟进 营销 AI", "target": "_blank", "title": "OKKI（小满）CRM 知识库", "desc": "外贸CRM系统使用指南 — 客户管理、邮件营销、商机跟进、AI智能辅助等全链路操作手册", "icon": "💼", "icon_color": "ic-green", "tag": {"text": "核心工具", "type": "tag-core"}}]}]}, {"id": "mod3", "icon": "📈", "icon_color": "ic-green", "title": "商品运营最佳实践", "subsections": [{"title": "运营方向 & 星等级", "id": "mod3a", "cards": [{"url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk/pf5vuno7qqk0plen", "keywords": "行业报告 宏观趋势 交流 咨询群", "target": "_blank", "title": "行业报告 & 交流咨询群", "desc": "最新行业趋势报告、同行交流社群入口", "icon": "📊", "icon_color": "ic-blue"}, {"url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk/reports", "keywords": "行业报告 数据 趋势 交流 咨询", "target": "_blank", "title": "行业报告库（完整版）", "desc": "全量行业报告集合 — 涵盖市场趋势、品类分析、买家洞察等多维度报告", "icon": "📈", "icon_color": "ic-blue"}, {"url": "https://xingdengji.yuque.com/gotkh7/cog9fr", "keywords": "星等级 商家 指标 商机分 交易分 复购率", "target": "_blank", "title": "商家星等级 · 完整指南", "desc": "星等级评定规则、指标详解（商机分/交易分/风险健康分/复购率）、FAQ、升星攻略", "icon": "⭐", "icon_color": "ic-orange", "tag": {"text": "核心规则", "type": "tag-core"}}]}, {"title": "商品规则 & 白皮书", "id": "mod3b", "cards": [{"url": "https://www.yuque.com/liangdan-5gae1/kenyau", "keywords": "商品白皮书 2026 国际站 规则", "target": "_blank", "title": "2026 阿里国际站商品白皮书", "desc": "商品运营全规则合集 — 发品教程、优爆品运营、一件代发等数十篇文档", "icon": "📕", "icon_color": "ic-blue", "tag": {"text": "核心规则", "type": "tag-core"}}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/sp3gdcmdyrngb0ap", "keywords": "商品 服务能力 要求 各行业", "target": "_blank", "title": "各行业商品服务能力要求", "desc": "不同行业对商品服务能力的具体要求和标准", "icon": "📋", "icon_color": "ic-blue"}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/imzrcmspxcx4g80c", "keywords": "优品 3.0 正式版 规则", "target": "_blank", "title": "优品 3.0 正式版规则", "desc": "优品评定标准与运营规范，提升商品竞争力", "icon": "✅", "icon_color": "ic-blue"}, {"url": "https://www.yuque.com/crystal-gu7dh/dbafwm/xp1hw0x77zt3gscw", "keywords": "欧洲 证书 推荐 上传 指南 CE", "target": "_blank", "title": "欧洲重点证书推荐及上传指南", "desc": "面向欧洲市场的证书推荐清单和平台上传操作指南", "icon": "🏅", "icon_color": "ic-green"}]}, {"title": "交易品货盘（RTS / 轻定制 / 定招）", "id": "mod3c", "cards": [{"url": "https://localstock.yuque.com/vwkspw/ty71h9", "keywords": "海外现货 入驻 发品 物流 订单 仓储", "target": "_blank", "title": "海外现货 · 商家帮助手册", "desc": "入驻条件、发品指南、物流操作、订单管理、一件代发、海外现货2.0模式", "icon": "🌍", "icon_color": "ic-cyan", "tag": {"text": "核心规则", "type": "tag-core"}}, {"url": "https://www.yuque.com/liangdan-5gae1/kenyau/egere4giyk4rlgeb", "keywords": "快速 轻定制 发布 攻略", "target": "_blank", "title": "快速轻定制 · 发布攻略", "desc": "轻定制商品发布操作指南，快速上架可定制商品", "icon": "⚡", "icon_color": "ic-green"}, {"url": "https://www.yuque.com/zhiyou-ftyw3/iwrkcu/yylu5g6al44dm0oy", "keywords": "7天 发货 交易品 7D品", "target": "_blank", "title": "7天可发货品（7D品）说明", "desc": "7天发货交易品的定义、要求和操作说明", "icon": "📦", "icon_color": "ic-green"}, {"url": "https://www.yuque.com/zhaomingli-ovonv/volmum/dfwpkgnvguiacfmc", "keywords": "定招 爆款 定向征品 行业", "target": "_blank", "title": "行业定向征品 · 爆款定招", "desc": "平台定向招募的热销品类，抓住定招流量红利", "icon": "🔥", "icon_color": "ic-red"}, {"url": "https://www.yuque.com/xinuan-fxwt9/rhvnl8/yhgax3m0wgwzq95g", "keywords": "交易品 定招 业务介绍 RTS", "target": "_blank", "title": "交易品定招业务介绍", "desc": "国际站交易品定招策略 — 了解平台定向招募的交易品类目和流量红利", "icon": "📊", "icon_color": "ic-green"}, {"url": "https://marketing.alibaba.com/enroll/checkSeller.htm?topicId=107377", "keywords": "3天出图 custom design 商详展示", "target": "_blank", "title": "3天出图 · 商详展示报名", "desc": "\"Custom design in 3 days\" 商详展示标签报名入口", "icon": "🎨", "icon_color": "ic-orange", "tag": {"text": "需登录", "type": "tag-login"}}, {"url": "https://marketing.alibaba.com/enroll/checkSeller.htm?topicId=107378", "keywords": "7天出样 custom sample 商详展示", "target": "_blank", "title": "7天出样 · 商详展示报名", "desc": "\"Custom sample in 7 days\" 商详展示标签报名入口", "icon": "🧪", "icon_color": "ic-orange", "tag": {"text": "需登录", "type": "tag-login"}}]}, {"title": "商机品货盘（深度定制 / 商机定招）", "id": "mod3d", "cards": [{"url": "https://xingdengji.yuque.com/gotkh7/hs3yx4/zrm1ark4w3r0wxiv", "keywords": "深度定制 deep customization", "target": "_blank", "title": "深度定制 · 运营指南", "desc": "深度定制商品的发布要求和运营建议", "icon": "🔧", "icon_color": "ic-purple"}, {"url": "https://xingdengji.yuque.com/gotkh7/hs3yx4/opigudmlvfpcdwcc", "keywords": "商机品 定招 定向", "target": "_blank", "title": "商机品定招", "desc": "平台定向招募的商机品类目，获取精准询盘", "icon": "💡", "icon_color": "ic-purple"}]}, {"title": "表达商家 & 商品实力的货盘", "id": "mod3e", "cards": [{"url": "https://www.yuque.com/crystal-gu7dh/dbafwm", "keywords": "金品诚企 背书 能力项", "target": "_blank", "title": "金品诚企 · 平台可背书能力项", "desc": "查看平台可为你背书的能力项，提升买家信任度", "icon": "🏆", "icon_color": "ic-orange"}, {"url": "https://xingdengji.yuque.com/gotkh7/hs3yx4", "keywords": "商家 服务力 服务能力", "target": "_blank", "title": "商家服务力", "desc": "服务能力评估与提升指南，增强店铺综合实力", "icon": "💪", "icon_color": "ic-green"}, {"url": "https://onetouch.alibaba.com/moBasedata/public/news/content27a6d511-9db1-40e0-8ec5-d808d6cdb485", "keywords": "设备维修保障 服务 保障范围 商家", "target": "_blank", "title": "设备维修保障 · 商家侧保障范围", "desc": "设备维修保障服务的商家侧保障范围（2025年6月9日生效）", "icon": "🛡️", "icon_color": "ic-cyan"}, {"url": "https://onetouch.alibaba.com/moBasedata/public/news/content84d276f1-2845-45c6-a83a-f7b21bb57796", "keywords": "设备维修保障 升级 通知", "target": "_blank", "title": "设备维修保障服务升级通知", "desc": "设备维修保障服务升级公告（2025年9月18日生效）", "icon": "📢", "icon_color": "ic-cyan"}]}]}, {"id": "rules", "icon": "📜", "icon_color": "ic-red", "title": "平台规则 & 合规", "subsections": [{"title": "", "id": "", "cards": [{"url": "https://rulechannel.alibaba.com/icbu?type=detail&ruleId=1992&cId=1318#/rule/detail?ruleId=1992&cId=1318", "keywords": "禁限售 规则 合规 平台政策 违禁品", "target": "_blank", "title": "禁限售规则（对外版本）", "desc": "平台禁限售商品规则 — 了解哪些商品禁止或限制在国际站销售，避免违规", "icon": "🚫", "icon_color": "ic-red", "tag": {"text": "必读规则", "type": "tag-core"}}]}]}], "footer": "国际站规则中心 · 商家运营指南索引 ｜ 数据自动更新 · 由语雀文档驱动"};
+const GLOW={"ic-blue":"glow-blue","ic-purple":"glow-purple","ic-green":"glow-green","ic-orange":"glow-blue","ic-cyan":"glow-cyan","ic-red":"glow-red"};
+
+function logoFor(title){
+  if(title.includes("Accio")||title.includes("AW "))return LOGOS.accio;
+  if(title.includes("OKKI")||title.includes("小满"))return LOGOS.okki;
+  return null;
+}
+
+async function loadData(){try{const r=await fetch("rules_data.json",{cache:"no-cache"});if(r.ok)return await r.json();}catch(e){}return FALLBACK_DATA;}
+
+function renderPage(d){
+  document.getElementById("heroTitle").textContent=d.title;
+  document.getElementById("heroSubtitle").textContent=d.subtitle;
+  const s=d.stats;
+  document.getElementById("heroStats").innerHTML=[{n:s.modules,l:"核心模块"},{n:s.docs,l:"规则文档"},{n:s.platforms,l:"平台入口"}].map(x=>'<div class="hero-stat"><span class="num">'+x.n+'</span><span class="label">'+x.l+'</span></div>').join("");
+  document.getElementById("quickNav").innerHTML=d.quick_nav.map(n=>'<a href="'+n.href+'"><span class="icon">'+n.icon+'</span>'+n.label+'</a>').join("");
+  var mc=document.getElementById("modulesContainer");
+  mc.innerHTML=d.modules.map(function(mod){
+    var total=mod.subsections.reduce(function(s,sub){return s+sub.cards.length;},0);
+    var glow=GLOW[mod.icon_color]||"glow-blue";
+    var subs=mod.subsections.map(function(sub){
+      var hd=sub.title?'<div class="sub-hd">'+sub.title+'</div>':'';
+      var cards=sub.cards.map(renderCard).join("");
+      return hd+'<div class="cards">'+cards+'</div>';
+    }).join("");
+    return '<div class="module '+glow+'"><div class="module-hd"><div class="icon '+mod.icon_color+'">'+mod.icon+'</div><h2>'+mod.title+'</h2><span class="count">'+total+' 条</span></div>'+subs+'</div>';
+  }).join("");
+  document.getElementById("footer").textContent=d.footer||"";
+  setupSearch();setupNav();
+}
+
+function renderCard(c){
+  var tag=c.tag?'<span class="tag '+c.tag.type+'">'+c.tag.text+'</span>':'';
+  var logo=logoFor(c.title);
+  var iconHtml;
+  if(logo){
+    iconHtml='<img class="card-logo" src="'+logo+'" alt="">';
+  } else {
+    iconHtml='<div class="card-icon '+c.icon_color+'">'+c.icon+'</div>';
+  }
+  return '<a class="card" href="'+c.url+'" target="'+(c.target||'_blank')+'" data-kw="'+(c.keywords||'')+'">'+
+    '<div class="card-top">'+iconHtml+'<div class="card-title">'+c.title+'</div></div>'+
+    '<div class="card-desc">'+c.desc+'</div>'+tag+
+    '<span class="card-arrow">→</span></a>';
+}
+
+function setupSearch(){
+  var input=document.getElementById("searchInput"),cb=document.getElementById("clearBtn");
+  input.addEventListener("input",function(){
+    var q=this.value.trim().toLowerCase();
+    cb.classList.toggle("show",q.length>0);
+    var cards=document.querySelectorAll(".card"),mods=document.querySelectorAll(".module"),empty=document.getElementById("emptyState");
+    if(!q){cards.forEach(function(c){c.classList.remove("highlight","dim");c.style.display="";});mods.forEach(function(m){m.style.display="";});empty.style.display="none";return;}
+    var kws=q.split(/\s+/),vis=0;
+    cards.forEach(function(c){
+      var t=(c.querySelector(".card-title").textContent+" "+c.querySelector(".card-desc").textContent+" "+(c.dataset.kw||"")).toLowerCase();
+      var m=kws.every(function(k){return t.includes(k);});
+      c.classList.toggle("highlight",m);c.classList.toggle("dim",!m);c.style.display=m?"":"none";if(m)vis++;
+    });
+    mods.forEach(function(m){m.style.display=m.querySelectorAll(".card:not(.dim)").length?"":"none";});
+    empty.style.display=vis===0?"block":"none";
+  });
+}
+function clearSearch(){var i=document.getElementById("searchInput");i.value="";i.dispatchEvent(new Event("input"));i.focus();}
+function setupNav(){document.querySelectorAll(".quick-nav a").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var t=document.querySelector(this.getAttribute("href"));if(t)t.scrollIntoView({behavior:"smooth",block:"start"});});});}
+loadData().then(renderPage);
+</script>
+</body>
+</html>

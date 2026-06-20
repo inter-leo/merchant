@@ -1,0 +1,589 @@
+{
+  "title": "国际站规则中心",
+  "subtitle": "一站式商家运营指南 — 从新手入门到进阶运营，所有规则和教程都在这里",
+  "stats": {
+    "modules": 6,
+    "docs": 39,
+    "platforms": 10
+  },
+  "quick_nav": [
+    {
+      "icon": "🚀",
+      "label": "新手入门",
+      "href": "#mod1"
+    },
+    {
+      "icon": "🤖",
+      "label": "AI工具",
+      "href": "#mod2"
+    },
+    {
+      "icon": "🧠",
+      "label": "Accio Work",
+      "href": "#accio"
+    },
+    {
+      "icon": "💼",
+      "label": "OKKI CRM",
+      "href": "#okki"
+    },
+    {
+      "icon": "⭐",
+      "label": "星等级",
+      "href": "#mod3a"
+    },
+    {
+      "icon": "📦",
+      "label": "商品规则",
+      "href": "#mod3b"
+    },
+    {
+      "icon": "🛒",
+      "label": "交易品货盘",
+      "href": "#mod3c"
+    },
+    {
+      "icon": "💡",
+      "label": "商机品货盘",
+      "href": "#mod3d"
+    },
+    {
+      "icon": "🏆",
+      "label": "实力货盘",
+      "href": "#mod3e"
+    },
+    {
+      "icon": "📜",
+      "label": "平台规则",
+      "href": "#rules"
+    }
+  ],
+  "modules": [
+    {
+      "id": "mod1",
+      "icon": "🚀",
+      "icon_color": "ic-blue",
+      "title": "新手入门 / 规则速查",
+      "subsections": [
+        {
+          "title": "",
+          "id": "",
+          "cards": [
+            {
+              "url": "https://peixun-alibaba.yuque.com/r/organizations/homepage",
+              "keywords": "新手 规则 入门 培训 云课堂 课堂",
+              "target": "_blank",
+              "title": "国际站 · 外贸云课堂",
+              "desc": "新手必读！国际站运营规则、平台政策、操作指南的统一学习入口",
+              "icon": "📚",
+              "icon_color": "ic-blue",
+              "tag": {
+                "text": "新手必看",
+                "type": "tag-new"
+              }
+            },
+            {
+              "url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk",
+              "keywords": "新手 商家 成长宝典 开店 装修 发品 流量 转化 履约 合规 GPSR checklist",
+              "target": "_blank",
+              "title": "新手商家成长宝典",
+              "desc": "新商家全链路指南 — 开店Checklist → 店铺装修发品 → 获取流量 → 承接商机 → 订单履约 → 合规保障，五步走通",
+              "icon": "🎯",
+              "icon_color": "ic-blue",
+              "tag": {
+                "text": "核心资源",
+                "type": "tag-core"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mod2",
+      "icon": "🤖",
+      "icon_color": "ic-purple",
+      "title": "AI 工具使用教程",
+      "subsections": [
+        {
+          "title": "AI 能力文档",
+          "id": "",
+          "cards": [
+            {
+              "url": "https://www.yuque.com/jixue-bpssi/wofnz4/hgrvvdnaeb0cra08?singleDoc",
+              "keywords": "AI 生意助手 使用教程 选品 发品 接待 分析 风控",
+              "target": "_blank",
+              "title": "AI 生意助手使用教程",
+              "desc": "首款\"懂外贸\"的AI-native工具，覆盖选品、发品、接待、分析、风控全链路",
+              "icon": "🔥",
+              "icon_color": "ic-purple",
+              "tag": {
+                "text": "核心工具",
+                "type": "tag-core"
+              }
+            },
+            {
+              "url": "https://www.yuque.com/yuxiaofeng-eqfs2/oz4myo",
+              "keywords": "知识库 上传 手册 AI",
+              "target": "_blank",
+              "title": "知识库上传手册",
+              "desc": "如何将企业资料上传到AI知识库，让AI更懂你的业务",
+              "icon": "📖",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/ikv2cgbdpom80lgt",
+              "keywords": "AI 结构化 商详 商品详情",
+              "target": "_blank",
+              "title": "AI 结构化商详",
+              "desc": "用AI自动生成结构化商品详情页，提升买家阅读体验",
+              "icon": "📋",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/ma9evbl5qqogqsff",
+              "keywords": "AI 辅助 发品 类目 发布",
+              "target": "_blank",
+              "title": "AI 辅助发品",
+              "desc": "类目发品升级 — AI智能填充商品信息，提升发品效率和质量",
+              "icon": "✨",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://www.yuque.com/jixue-bpssi/wofnz4/wcc9yv119d5gilw6",
+              "keywords": "AI 智能 选品 生意助手",
+              "target": "_blank",
+              "title": "AI 智能选品",
+              "desc": "生意助手 × 智能选品 — 用数据驱动选品决策",
+              "icon": "🎯",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/esw52xcu0d8hys1o",
+              "keywords": "AI 创意 工坊 图片 素材",
+              "target": "_blank",
+              "title": "AI 创意工坊",
+              "desc": "AI生成商品主图、场景图、营销素材，提升视觉表现力",
+              "icon": "🎨",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/ek3bymhgxbk8cxcr",
+              "keywords": "AI Search 搜索 商品 QA 问答",
+              "target": "_blank",
+              "title": "AI Search 商品 Q&A",
+              "desc": "AI搜索时代下商品优化指南，提升AI搜索命中率",
+              "icon": "🔍",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk/shfw3sdbd874y1bk",
+              "keywords": "AI 客户经理 介绍 产品",
+              "target": "_blank",
+              "title": "AI 客户经理产品介绍",
+              "desc": "AI客户经理功能介绍 — 智能运营建议与商机管理",
+              "icon": "👤",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://www.yuque.com/chaike/yingxiao",
+              "keywords": "数字营销 广告 P4P 直通车 全站推 推广",
+              "target": "_blank",
+              "title": "数字营销广告投放指南",
+              "desc": "阿里巴巴国际站数字营销广告教程 — 全站推、直通车、P4P等广告产品使用指南",
+              "icon": "📢",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "核心工具",
+                "type": "tag-core"
+              }
+            }
+          ]
+        },
+        {
+          "title": "MA 后台快捷入口",
+          "id": "",
+          "cards": [
+            {
+              "url": "https://i.alibaba.com/index.htm?aiAutoShow=true&aiAutoAgentKey=salesDigitalHuman&aiAutoAgentExtInfo=%7B%22actionDesc%22%3A%22%E7%82%B9%E5%87%BB%E8%BE%BE%E6%88%90%E9%A6%96%E4%B8%AA%E3%80%8C%E6%96%B0%E6%89%8B%E9%87%8C%E7%A8%8B%E7%A2%91%E3%80%8D%22%2C%22agentKey%22%3A%20%22salesDigitalHuman%22%7D",
+              "keywords": "新手 里程碑 MA 后台 任务",
+              "target": "_blank",
+              "title": "新手里程碑",
+              "desc": "新店成长任务指引，一步步带你完成从0到1",
+              "icon": "🏁",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "需登录",
+                "type": "tag-login"
+              }
+            },
+            {
+              "url": "https://i.alibaba.com/index.htm?aiAutoShow=true&aiAutoAgentKey=salesDigitalHuman",
+              "keywords": "AI 客户经理 MA 后台",
+              "target": "_blank",
+              "title": "AI 客户经理",
+              "desc": "登录MA后台，直接与AI客户经理对话获取运营建议",
+              "icon": "🤖",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "需登录",
+                "type": "tag-login"
+              }
+            },
+            {
+              "url": "https://i.alibaba.com/index.htm?aiAutoShow=true&aiAutoAgentKey=salesDigitalHuman&aiAutoAgentExtInfo=%7B%22actionDesc%22%3A%22%E6%9F%A5%E7%9C%8B%E5%95%86%E6%9C%BA%E9%A2%84%E8%AD%A6%22%7D",
+              "keywords": "商机 预警 任务 MA 后台",
+              "target": "_blank",
+              "title": "商机预警任务",
+              "desc": "及时查看商机异常和风险预警，防止商机流失",
+              "icon": "⚠️",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "需登录",
+                "type": "tag-login"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accio",
+      "icon": "🧠",
+      "icon_color": "ic-cyan",
+      "title": "Accio Work 智能工具",
+      "subsections": [
+        {
+          "title": "",
+          "id": "",
+          "cards": [
+            {
+              "url": "https://acciowork.yuque.com/rfmg8t/ieb85b",
+              "keywords": "Accio Work 知识库 入门指南 核心功能 智能体 插件 技能",
+              "target": "_blank",
+              "title": "Accio Work 知识库",
+              "desc": "产品简介、入门指南、核心功能（智能体/插件/技能）、生意助手智能体、OKKI插件、实战技巧",
+              "icon": "📚",
+              "icon_color": "ic-cyan",
+              "tag": {
+                "text": "核心资源",
+                "type": "tag-core"
+              }
+            },
+            {
+              "url": "https://acciowork.yuque.com/rfmg8t/ieb85b/nkhalskv5xs5i1xg?singleDoc",
+              "keywords": "Accio Work 企业版 AWB 简介 使用流程 FAQ",
+              "target": "_blank",
+              "title": "AW 企业版简介",
+              "desc": "Accio Work 企业版定位、核心价值、使用流程（含操作说明&视频）、常见FAQ、一页纸产品介绍",
+              "icon": "🏢",
+              "icon_color": "ic-cyan"
+            },
+            {
+              "url": "https://acciowork.yuque.com/rfmg8t/ieb85b",
+              "keywords": "Accio Work 实战局 直播 商家案例 视频",
+              "target": "_blank",
+              "title": "《Accio Work 实战局》系列直播",
+              "desc": "4期商家实战直播回放 — 真实商家分享Accio Work如何助力降本增效、获取商机",
+              "icon": "🎬",
+              "icon_color": "ic-cyan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "okki",
+      "icon": "💼",
+      "icon_color": "ic-green",
+      "title": "OKKI（小满）CRM",
+      "subsections": [
+        {
+          "title": "",
+          "id": "",
+          "cards": [
+            {
+              "url": "https://xiaomanhelp.yuque.com/r/organizations/homepage",
+              "keywords": "OKKI 小满 CRM 客户管理 邮件 跟进 营销 AI",
+              "target": "_blank",
+              "title": "OKKI（小满）CRM 知识库",
+              "desc": "外贸CRM系统使用指南 — 客户管理、邮件营销、商机跟进、AI智能辅助等全链路操作手册",
+              "icon": "💼",
+              "icon_color": "ic-green",
+              "tag": {
+                "text": "核心工具",
+                "type": "tag-core"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mod3",
+      "icon": "📈",
+      "icon_color": "ic-green",
+      "title": "商品运营最佳实践",
+      "subsections": [
+        {
+          "title": "运营方向 & 星等级",
+          "id": "mod3a",
+          "cards": [
+            {
+              "url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk/pf5vuno7qqk0plen",
+              "keywords": "行业报告 宏观趋势 交流 咨询群",
+              "target": "_blank",
+              "title": "行业报告 & 交流咨询群",
+              "desc": "最新行业趋势报告、同行交流社群入口",
+              "icon": "📊",
+              "icon_color": "ic-blue"
+            },
+            {
+              "url": "https://peixun-alibaba.yuque.com/pt97wp/ikibpk/reports",
+              "keywords": "行业报告 数据 趋势 交流 咨询",
+              "target": "_blank",
+              "title": "行业报告库（完整版）",
+              "desc": "全量行业报告集合 — 涵盖市场趋势、品类分析、买家洞察等多维度报告",
+              "icon": "📈",
+              "icon_color": "ic-blue"
+            },
+            {
+              "url": "https://xingdengji.yuque.com/gotkh7/cog9fr",
+              "keywords": "星等级 商家 指标 商机分 交易分 复购率",
+              "target": "_blank",
+              "title": "商家星等级 · 完整指南",
+              "desc": "星等级评定规则、指标详解（商机分/交易分/风险健康分/复购率）、FAQ、升星攻略",
+              "icon": "⭐",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "核心规则",
+                "type": "tag-core"
+              }
+            }
+          ]
+        },
+        {
+          "title": "商品规则 & 白皮书",
+          "id": "mod3b",
+          "cards": [
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau",
+              "keywords": "商品白皮书 2026 国际站 规则",
+              "target": "_blank",
+              "title": "2026 阿里国际站商品白皮书",
+              "desc": "商品运营全规则合集 — 发品教程、优爆品运营、一件代发等数十篇文档",
+              "icon": "📕",
+              "icon_color": "ic-blue",
+              "tag": {
+                "text": "核心规则",
+                "type": "tag-core"
+              }
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/sp3gdcmdyrngb0ap",
+              "keywords": "商品 服务能力 要求 各行业",
+              "target": "_blank",
+              "title": "各行业商品服务能力要求",
+              "desc": "不同行业对商品服务能力的具体要求和标准",
+              "icon": "📋",
+              "icon_color": "ic-blue"
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/imzrcmspxcx4g80c",
+              "keywords": "优品 3.0 正式版 规则",
+              "target": "_blank",
+              "title": "优品 3.0 正式版规则",
+              "desc": "优品评定标准与运营规范，提升商品竞争力",
+              "icon": "✅",
+              "icon_color": "ic-blue"
+            },
+            {
+              "url": "https://www.yuque.com/crystal-gu7dh/dbafwm/xp1hw0x77zt3gscw",
+              "keywords": "欧洲 证书 推荐 上传 指南 CE",
+              "target": "_blank",
+              "title": "欧洲重点证书推荐及上传指南",
+              "desc": "面向欧洲市场的证书推荐清单和平台上传操作指南",
+              "icon": "🏅",
+              "icon_color": "ic-green"
+            }
+          ]
+        },
+        {
+          "title": "交易品货盘（RTS / 轻定制 / 定招）",
+          "id": "mod3c",
+          "cards": [
+            {
+              "url": "https://localstock.yuque.com/vwkspw/ty71h9",
+              "keywords": "海外现货 入驻 发品 物流 订单 仓储",
+              "target": "_blank",
+              "title": "海外现货 · 商家帮助手册",
+              "desc": "入驻条件、发品指南、物流操作、订单管理、一件代发、海外现货2.0模式",
+              "icon": "🌍",
+              "icon_color": "ic-cyan",
+              "tag": {
+                "text": "核心规则",
+                "type": "tag-core"
+              }
+            },
+            {
+              "url": "https://www.yuque.com/liangdan-5gae1/kenyau/egere4giyk4rlgeb",
+              "keywords": "快速 轻定制 发布 攻略",
+              "target": "_blank",
+              "title": "快速轻定制 · 发布攻略",
+              "desc": "轻定制商品发布操作指南，快速上架可定制商品",
+              "icon": "⚡",
+              "icon_color": "ic-green"
+            },
+            {
+              "url": "https://www.yuque.com/zhiyou-ftyw3/iwrkcu/yylu5g6al44dm0oy",
+              "keywords": "7天 发货 交易品 7D品",
+              "target": "_blank",
+              "title": "7天可发货品（7D品）说明",
+              "desc": "7天发货交易品的定义、要求和操作说明",
+              "icon": "📦",
+              "icon_color": "ic-green"
+            },
+            {
+              "url": "https://www.yuque.com/zhaomingli-ovonv/volmum/dfwpkgnvguiacfmc",
+              "keywords": "定招 爆款 定向征品 行业",
+              "target": "_blank",
+              "title": "行业定向征品 · 爆款定招",
+              "desc": "平台定向招募的热销品类，抓住定招流量红利",
+              "icon": "🔥",
+              "icon_color": "ic-red"
+            },
+            {
+              "url": "https://www.yuque.com/xinuan-fxwt9/rhvnl8/yhgax3m0wgwzq95g",
+              "keywords": "交易品 定招 业务介绍 RTS",
+              "target": "_blank",
+              "title": "交易品定招业务介绍",
+              "desc": "国际站交易品定招策略 — 了解平台定向招募的交易品类目和流量红利",
+              "icon": "📊",
+              "icon_color": "ic-green"
+            },
+            {
+              "url": "https://marketing.alibaba.com/enroll/checkSeller.htm?topicId=107377",
+              "keywords": "3天出图 custom design 商详展示",
+              "target": "_blank",
+              "title": "3天出图 · 商详展示报名",
+              "desc": "\"Custom design in 3 days\" 商详展示标签报名入口",
+              "icon": "🎨",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "需登录",
+                "type": "tag-login"
+              }
+            },
+            {
+              "url": "https://marketing.alibaba.com/enroll/checkSeller.htm?topicId=107378",
+              "keywords": "7天出样 custom sample 商详展示",
+              "target": "_blank",
+              "title": "7天出样 · 商详展示报名",
+              "desc": "\"Custom sample in 7 days\" 商详展示标签报名入口",
+              "icon": "🧪",
+              "icon_color": "ic-orange",
+              "tag": {
+                "text": "需登录",
+                "type": "tag-login"
+              }
+            }
+          ]
+        },
+        {
+          "title": "商机品货盘（深度定制 / 商机定招）",
+          "id": "mod3d",
+          "cards": [
+            {
+              "url": "https://xingdengji.yuque.com/gotkh7/hs3yx4/zrm1ark4w3r0wxiv",
+              "keywords": "深度定制 deep customization",
+              "target": "_blank",
+              "title": "深度定制 · 运营指南",
+              "desc": "深度定制商品的发布要求和运营建议",
+              "icon": "🔧",
+              "icon_color": "ic-purple"
+            },
+            {
+              "url": "https://xingdengji.yuque.com/gotkh7/hs3yx4/opigudmlvfpcdwcc",
+              "keywords": "商机品 定招 定向",
+              "target": "_blank",
+              "title": "商机品定招",
+              "desc": "平台定向招募的商机品类目，获取精准询盘",
+              "icon": "💡",
+              "icon_color": "ic-purple"
+            }
+          ]
+        },
+        {
+          "title": "表达商家 & 商品实力的货盘",
+          "id": "mod3e",
+          "cards": [
+            {
+              "url": "https://www.yuque.com/crystal-gu7dh/dbafwm",
+              "keywords": "金品诚企 背书 能力项",
+              "target": "_blank",
+              "title": "金品诚企 · 平台可背书能力项",
+              "desc": "查看平台可为你背书的能力项，提升买家信任度",
+              "icon": "🏆",
+              "icon_color": "ic-orange"
+            },
+            {
+              "url": "https://xingdengji.yuque.com/gotkh7/hs3yx4",
+              "keywords": "商家 服务力 服务能力",
+              "target": "_blank",
+              "title": "商家服务力",
+              "desc": "服务能力评估与提升指南，增强店铺综合实力",
+              "icon": "💪",
+              "icon_color": "ic-green"
+            },
+            {
+              "url": "https://onetouch.alibaba.com/moBasedata/public/news/content27a6d511-9db1-40e0-8ec5-d808d6cdb485",
+              "keywords": "设备维修保障 服务 保障范围 商家",
+              "target": "_blank",
+              "title": "设备维修保障 · 商家侧保障范围",
+              "desc": "设备维修保障服务的商家侧保障范围（2025年6月9日生效）",
+              "icon": "🛡️",
+              "icon_color": "ic-cyan"
+            },
+            {
+              "url": "https://onetouch.alibaba.com/moBasedata/public/news/content84d276f1-2845-45c6-a83a-f7b21bb57796",
+              "keywords": "设备维修保障 升级 通知",
+              "target": "_blank",
+              "title": "设备维修保障服务升级通知",
+              "desc": "设备维修保障服务升级公告（2025年9月18日生效）",
+              "icon": "📢",
+              "icon_color": "ic-cyan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rules",
+      "icon": "📜",
+      "icon_color": "ic-red",
+      "title": "平台规则 & 合规",
+      "subsections": [
+        {
+          "title": "",
+          "id": "",
+          "cards": [
+            {
+              "url": "https://rulechannel.alibaba.com/icbu?type=detail&ruleId=1992&cId=1318#/rule/detail?ruleId=1992&cId=1318",
+              "keywords": "禁限售 规则 合规 平台政策 违禁品",
+              "target": "_blank",
+              "title": "禁限售规则（对外版本）",
+              "desc": "平台禁限售商品规则 — 了解哪些商品禁止或限制在国际站销售，避免违规",
+              "icon": "🚫",
+              "icon_color": "ic-red",
+              "tag": {
+                "text": "必读规则",
+                "type": "tag-core"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": "国际站规则中心 · 商家运营指南索引 ｜ 数据自动更新 · 由语雀文档驱动"
+}
